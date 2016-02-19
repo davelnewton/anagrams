@@ -47,7 +47,9 @@ class AnagramFinder
 
     def print_hash(out_hash)
       out_hash.values.each do |anagram_array|
-        puts anagram_array.join(' ')
+        if anagram_array.size > 1
+          puts anagram_array.join(' ')
+        end
       end
     end
   end

@@ -29,7 +29,8 @@ describe AnagramFinder do
     it 'prints output list of matching anagrams' do
       expect {
         subject
-      }.to output("abacus\nsort Tors\n").to_stdout
+      }.to output("sort Tors\n").to_stdout
     end
+
   end
 end

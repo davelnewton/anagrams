@@ -20,7 +20,6 @@ ruby anagram_file test_file.txt
 ```
 
 ### Todo List
-* remove output lines that don't have matches
 * refactor to use instantiated class
 * find the longest words that are anagrams
 * find the set of anagrams containing the most words
