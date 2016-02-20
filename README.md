@@ -20,6 +20,5 @@ ruby anagram_file test_file.txt
 ```
 
 ### Todo List
-* refactor to use instantiated class
 * find the longest words that are anagrams
 * find the set of anagrams containing the most words
