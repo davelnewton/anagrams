@@ -13,10 +13,10 @@ describe AnagramFinder do
 
   describe '#print_matches' do
 
-    it 'accepts a file name as a parameter for reading' do
+    it 'does not raise error with valid file' do
       expect{subject.print_matches}.not_to raise_error
     end
- 
+
     context 'with missing file' do
       let(:test_file) { 'foo.txt' }
 
@@ -36,8 +36,15 @@ describe AnagramFinder do
     it 'prints output list of matching anagrams' do
       expect {
         subject.print_matches
-      }.to output("sort Tors\n").to_stdout
+      }.to output("sort Tors\nbabble lebabb\nabcdef cbadef\n").to_stdout
     end
+  end
 
+  describe '#print_longest_anagrams' do
+    it 'prints out the longest anagram words' do
+      expect {
+        subject.print_longest_anagrams
+      }.to output("babble lebabb\nabcdef cbadef\n").to_stdout
+    end
   end
 end

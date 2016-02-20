@@ -20,5 +20,5 @@ ruby anagram_file test_file.txt
 ```
 
 ### Todo List
-* find the longest words that are anagrams
 * find the set of anagrams containing the most words
+* make rake task to execute different functions
